@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p id="test" q-show="flag">1秒后看不到我</p>
+<script src="../bower_components/q.js/dist/Q.native.js"></script>
+<script src="./computed.js"></script>
+<script>
+var q = new Q({
+    el: '#test',
+    data: {
+        flag1: true,
+        flag2: false,
+        flag3: true
+    }
+});
+
+QComputed(q, 'flag', function () {
+    return this.flag1 || this.flag2 && this.flag3;
+});
+
+setTimeout(function () {
+    q.$set('flag1', false);
+}, 1000);
+</script>
+</body>
+</html>

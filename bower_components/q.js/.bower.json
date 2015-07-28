@@ -1,0 +1,37 @@
+{
+  "name": "Q.js",
+  "version": "0.5.5",
+  "main": "dist/Q.js",
+  "description": "fake-MVVM library",
+  "authors": [
+    "Daniel Yang <miniflycn@justany.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".*",
+    "examples",
+    "benchmarks",
+    "node_modules",
+    "tests",
+    "vendor",
+    "gulpfile.js",
+    "jquery.conf.js",
+    "native.conf.js",
+    "zepto.conf.js",
+    "webpack.config.js",
+    "*.json",
+    "src",
+    "*.md"
+  ],
+  "homepage": "https://github.com/imweb/Q.js",
+  "_release": "0.5.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.5",
+    "commit": "24efe2abed231d4c3f123c615d44fa91c60e4885"
+  },
+  "_source": "git://github.com/imweb/Q.js.git",
+  "_target": "~0.5.5",
+  "_originalSource": "q.js",
+  "_direct": true
+}
