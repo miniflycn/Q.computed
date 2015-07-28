@@ -21,7 +21,7 @@ Q.js中实现是比较麻烦的，所以可以使用该q.computed来实现。
  * @param {Function} getter 当this为q的时候如何得到computed的值
  */
 QComputed(q, 'flag', function () {
-	return flag1 || flag2 && flag3;
+	return this.flag1 || this.flag2 && this.flag3;
 })
 ```
 
